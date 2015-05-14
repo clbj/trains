@@ -1,13 +1,17 @@
 __author__ = 'clbj'
 
 
+
+
 class Dijkstra:
     def __init__(self):
-        G = {'s': {'u': 10, 'x': 5},
-             'u': {'v': 1, 'x': 2},
-             'v': {'y': 4},
-             'x': {'u': 3, 'v': 9, 'y': 2},
-             'y': {'s': 7, 'v': 6}}
+        # Graph: AB5, BC4, CD8, DC8, DE6, AD5, CE2, EB3, AE7
+
+        G = {'A': {'B': 5, 'D': 5, 'E': 7},
+             'B': {'C': 4, 'x': 2},
+             'C': {'D': 8, 'E': 2},
+             'D': {'C': 8, 'E': 6},
+             'E': {'B': 3}}
         print("Initializing")
 
 
